@@ -19,6 +19,8 @@ npm install -g cnpm --registry=https://registry.npm.tobao.org
 ~~~
 // set taobao
 npm config set registry https://registry.npm.taobao.org
+// get
+npm config get
 // reduction
 npm config set registry http://registry.npmjs.org
 ~~~
