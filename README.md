@@ -1,26 +1,22 @@
 # node-base
 
-## npm 跨域问题
+### npx
 
-### 使用 --registry
-
-~~~
-npm install --registry=https://registry.npm.taobao.org
-~~~
-
-### 使用 cnpm
+> npm v5.2.0 或更高版本		
+  npx 可以调用远程模块
 
 ~~~
-npm install -g cnpm --registry=https://registry.npm.tobao.org
+npx http-server
 ~~~
 
-### 修改 npm 的 config registry
 
-~~~
-// set taobao
-npm config set registry https://registry.npm.taobao.org
-// get
-npm config get
-// reduction
-npm config set registry http://registry.npmjs.org
-~~~
+## package.json
+
+### ^ 和 ~ 的区别
+
+* ^ 为当前主版本（major version）的最新版本
+* ~ 为当前次版本（minor version）的最新版本
+
+### pacjage-lock.json
+
+> package-lock.json 为锁定 package.json 的版本记录，保证获取的模块都是相同版本
